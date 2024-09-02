@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 availableShips = __import__('0-passengers').availableShips
 ships = availableShips(10)
