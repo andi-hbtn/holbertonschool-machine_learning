@@ -31,4 +31,3 @@ def sentientPlanets():
                 planet = requests.get(url).json()
                 homePlanets.append(planet.get('name'))
     return homePlanets
-
