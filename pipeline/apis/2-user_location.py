@@ -17,7 +17,7 @@ if __name__ == "__main__":
     try:
         url = argv[1]
         results = requests.get(url)
-        print(results)
+        # print(results.status_code)
 
         if results.status_code == 403:
             reset = results.headers.get('X-Ratelimit-Reset')

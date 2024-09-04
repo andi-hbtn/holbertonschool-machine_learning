@@ -8,7 +8,6 @@ and if 2 launches have the same date, it's the first one in the API result.
 """
 import requests
 
-
 if __name__ == "__main__":
     url = "https://api.spacexdata.com/v4/launches/upcoming"
     results = requests.get(url).json()
@@ -26,11 +25,11 @@ if __name__ == "__main__":
             rocket = launch.get('rocket')
             launchPad = launch.get('launchpad')
     if rocket:
-        rocket = requests.get('https://api.spacexdata.com/v4/rockets/{}'.
-        format(rocket)).json().get('name')
+        url = 'https://api.spacexdata.com/v4/rockets/{}'
+        rocket = requests.get(url.format(rocket)).json().get('name')
     if launchPad:
-        launchpad = requests.get('https://api.spacexdata.com/v4/launchpads/{}'.
-        format(launchPad)).json()
+        launchpads_url = 'https://api.spacexdata.com/v4/launchpads/{}'
+        launchpad = requests.get(launchpads_url.format(launchPad)).json()
         launchPad = launchpad.get('name')
         location = launchpad.get('locality')
 
