@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
     Uses the Star Wars API to return the list of ships that can hold 
-    passengerCount number of passengers create a availableShips function
+    passengerCount number of 
+    passengers create a 
+    availableShips function
 """
 
 
