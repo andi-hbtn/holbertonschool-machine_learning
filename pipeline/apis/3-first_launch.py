@@ -6,8 +6,6 @@ Uses the (unofficial) SpaceX API to print the upcoming launch as:
 The “upcoming launch” is the one which is the soonest from now, in UTC
 and if 2 launches have the same date, it's the first one in the API result.
 """
-
-
 import requests
 
 
