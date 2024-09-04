@@ -17,7 +17,6 @@ if __name__ == "__main__":
     try:
         url = argv[1]
         results = requests.get(url)
-        
         print(results)
 
         if results.status_code == 403:
