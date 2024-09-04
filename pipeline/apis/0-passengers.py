@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 # Prototype
 # Do Python prototyping
-
 import requests
 
 def availableShips(passengerCount):
     """
     Uses the Star Wars API to return the list of ships that can hold
         passengerCount number of passengers
-
     parameters:
         passengerCount [int]:
             the number of passenger the ship must be able to carry
-
     returns:
         [list]: all ships that can hold that many passengers
     """
