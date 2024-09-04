@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """
-    Uses the Star Wars API to return the list of ships that can hold passengerCount number of passengers
-    parameters:
-        passengerCount [int]:the number of passenger the ship must be able to carry
-    returns:all ships that can hold that many passengers
+    Uses the Star Wars API to return the list of ships that can hold 
+    passengerCount number of passengers
 """
 import requests
 
