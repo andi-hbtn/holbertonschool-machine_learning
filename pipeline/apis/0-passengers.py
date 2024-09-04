@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""
-    Uses the Star Wars API to return the list of ships that can hold 
-    passengerCount number of 
-    passengers create a 
-    availableShips function
-"""
-
-
 import requests
 
 def availableShips(passengerCount):
+
+    """
+        Uses the Star Wars API to return the list of ships that can hold 
+        passengerCount number of 
+        passengers create a 
+        availableShips function
+    """
+
     if type(passengerCount) is not int:
             raise TypeError(
                 "passengerCount must be a positive number of passengers")
